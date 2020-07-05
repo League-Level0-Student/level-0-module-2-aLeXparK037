@@ -15,6 +15,7 @@ public static void main(String[] args) {
 	
 
 	// 2. Get the user to enter a question for the 8 ball to answer
+	for (int a = 0; a < 10; a++) {
 	String question = JOptionPane.showInputDialog("enter a question for the 8-ball");
 
 	// 3. Make a variable and initialize it to a random number.
@@ -35,7 +36,7 @@ public static void main(String[] args) {
 	} else if (randomNumber == 3 ) {
 		JOptionPane.showMessageDialog(null, "Don't know the answer to that");
 	}
-
+	}
 	// -- tell the user "Yes"
 
 	// 5. If the random number is 1

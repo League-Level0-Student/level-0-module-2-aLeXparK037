@@ -10,6 +10,7 @@
     void setup() {
       // 2. Set the size of your sketch
     size(500,500);
+    
     }
     
     void draw() {
@@ -20,7 +21,9 @@
       //    Make sure it fits in the window. Change the variables if it does not.
       noStroke();
     ellipse(x,y, z,z);
-    
+    text("This is the Dot Game", 200,100);
+    ellipse(195,100, 5,5);
+    ellipse(325,100, 5,5);
     }
     
     /******** This method gets called automatically when you press the mouse ************/
@@ -39,12 +42,10 @@ getDistanceFromMouse(x,y);
          x = (int) random(width);
          y = (int) random(height);
        }
-      if (mouseX == x) {
-        print("You win");
+      if (mouseX == 325) {
+        print(" You win ");
       }
-      if (mousePressed &&(mouseButton == RIGHT)) {
-        print("You win");
-      }
+
     }
     
     /********  This method gives you the number of pixels between the mouse and the x,y point ***********/
