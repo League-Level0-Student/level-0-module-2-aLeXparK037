@@ -18,6 +18,7 @@
       
       // 4. Draw an ellipse using the variables created at the top of the sketch for the location and size of your ellipse. 
       //    Make sure it fits in the window. Change the variables if it does not.
+      noStroke();
     ellipse(x,y, z,z);
     
     }
@@ -38,7 +39,12 @@ getDistanceFromMouse(x,y);
          x = (int) random(width);
          y = (int) random(height);
        }
-      
+      if (mouseX == x) {
+        print("You win");
+      }
+      if (mousePressed &&(mouseButton == RIGHT)) {
+        print("You win");
+      }
     }
     
     /********  This method gives you the number of pixels between the mouse and the x,y point ***********/
